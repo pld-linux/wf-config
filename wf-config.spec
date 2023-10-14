@@ -5,7 +5,7 @@
 Summary:	A library for managing configuration files, written for wayfire
 Name:		wf-config
 Version:	0.8.0
-Release:	1
+Release:	2
 License:	MIT
 Group:		Libraries
 Source0:	https://github.com/WayfireWM/wf-config/releases/download/v%{version}/%{name}-%{version}.tar.xz
@@ -30,6 +30,7 @@ A library for managing configuration files, written for wayfire.
 Summary:	Header files for wf-config library
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
+Requires:	GLM >= 0.9.9.9
 Requires:	libevdev-devel
 Requires:	libstdc++-devel >= 6:9
 Requires:	libxml2-devel
