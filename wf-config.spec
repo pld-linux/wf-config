@@ -15,6 +15,7 @@ Source0:	https://github.com/WayfireWM/wf-config/releases/download/v%{version}/%{
 Patch0:		gcc14.patch
 URL:		https://wayfire.org/
 BuildRequires:	GLM-devel >= 0.9.9.9
+BuildRequires:	cmake
 BuildRequires:	libevdev-devel
 BuildRequires:	libstdc++-devel >= 6:9
 BuildRequires:	libxml2-devel
