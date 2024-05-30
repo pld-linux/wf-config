@@ -12,6 +12,7 @@ Group:		Libraries
 #Source0Download: https://github.com/WayfireWM/wf-config/releases
 Source0:	https://github.com/WayfireWM/wf-config/releases/download/v%{version}/%{name}-%{version}.tar.xz
 # Source0-md5:	633cd902c2c889ae02c6ffeef8b44357
+Patch0:		gcc14.patch
 URL:		https://wayfire.org/
 BuildRequires:	GLM-devel >= 0.9.9.9
 BuildRequires:	libevdev-devel
@@ -62,6 +63,7 @@ Biblioteka statyczna wf-config.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %meson build \
