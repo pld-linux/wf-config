@@ -5,15 +5,14 @@
 Summary:	A library for managing configuration files, written for wayfire
 Summary(pl.UTF-8):	Napisana dla wayfire biblioteka do zarządzania plikami konfiguracyjnymi
 Name:		wf-config
-Version:	0.8.0
-Release:	3
+Version:	0.9.0
+Release:	1
 License:	MIT
 Group:		Libraries
 #Source0Download: https://github.com/WayfireWM/wf-config/releases
 Source0:	https://github.com/WayfireWM/wf-config/releases/download/v%{version}/%{name}-%{version}.tar.xz
-# Source0-md5:	633cd902c2c889ae02c6ffeef8b44357
-Patch0:		gcc14.patch
-Patch1:		glm.patch
+# Source0-md5:	8710cf36c1d55958fbb5eb7bfa942c18
+Patch0:		glm.patch
 URL:		https://wayfire.org/
 BuildRequires:	GLM-devel >= 0.9.9.9
 BuildRequires:	cmake
@@ -66,7 +65,6 @@ Biblioteka statyczna wf-config.
 %prep
 %setup -q
 %patch0 -p1
-%patch1 -p1
 
 %build
 %meson build \
