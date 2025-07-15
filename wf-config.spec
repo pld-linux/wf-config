@@ -6,7 +6,7 @@ Summary:	A library for managing configuration files, written for wayfire
 Summary(pl.UTF-8):	Napisana dla wayfire biblioteka do zarządzania plikami konfiguracyjnymi
 Name:		wf-config
 Version:	0.9.0
-Release:	1
+Release:	2
 License:	MIT
 Group:		Libraries
 #Source0Download: https://github.com/WayfireWM/wf-config/releases
